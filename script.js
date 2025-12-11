@@ -28,15 +28,15 @@ function updateEmoji() {
 
 btnStart.addEventListener("click", () => {
     currentValue++
-    box.style.color ="white"
     box.style.fontSize = "70px"
-    box.style.paddingTop = "45px"
-    box.style.font = "bold"
+    box.style.paddingTop = "40px"
+     box.style.fontWeight = "bold"
     counter.textContent = currentValue
     if([10,20,40,50,100].includes(currentValue)){
-        box.style.color = "red"
+        counter.style.color = "red"
+
     } else {
-        box.style.color = "white"
+        counter.style.color = "white"
     }
     updateEmoji()
 })
@@ -46,15 +46,15 @@ btnPrev.addEventListener("click", () =>{
         currentValue --
         counter.textContent = currentValue
     }
-    box.style.color ="white"
+
     box.style.fontSize = "70px"
     box.style.paddingTop = "45px"
-    box.style.font = "bold"
+     box.style.fontWeight = "bold"
     counter.textContent = currentValue
     if([10,20,40,50,100].includes(currentValue)){
-        box.style.color = "red"
+        counter.style.color = "red"
     } else {
-        box.style.color = "white"
+        counter.style.color = "white"
     }
     updateEmoji()
 })
