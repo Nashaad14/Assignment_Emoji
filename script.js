@@ -8,11 +8,11 @@ const counter = document.querySelector("#counter")
 let currentValue = 0
 
 const specialEmojis = {
-    10: "👌",
-    20: "🔥",
-    40: "🌟",
+    10: "👏",
+    20: "👌",
+    40: "🤗",
     50: "🎉",
-    100: "🏁",
+    100: "🏆",
 }
 
 function updateEmoji() {
